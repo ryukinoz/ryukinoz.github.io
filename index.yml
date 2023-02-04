@@ -229,7 +229,7 @@ features:
 
   - title: Deploy anywhere
     img: /icons/globe.svg
-    description: We are cloud native and well versed in the finer detail of making things just work. [Explore ways to deploy](/docs/advanced/deployment.md)
+    description: We are cloud native and well versed in the finer detail of making things just work.
 
   - title: Prepare for Departure
     img: /icons/plane.svg

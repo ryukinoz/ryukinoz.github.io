@@ -1,16 +1,14 @@
 ---
 layout: ./base.njk
-page_css: showcase.css
+page_css: contact.css
 ---
 
-<main class="showcase">
-  <header class="showcase-header">
+<main class="contact-us">
+  <header class="contact-us-header">
     <h1>{{ title }}</h1>
     {{ email | md | safe }}
     {{ phone | md | safe }}
-    {% for i in office %}
-    {{ i | md | safe }}
-    {% endfor %}
+    {{ office | md | safe }}
   </header>
 
   <ul class="showcase-sites">
