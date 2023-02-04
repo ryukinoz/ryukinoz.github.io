@@ -9,7 +9,7 @@ page_css: landing.css
     <figure class="landing-header-fire">
       {{ comp.fire() | safe }}
     </figure>
-
+    {% if install %}
     <div class="landing-install">
       {{ install.title | md | safe }}
 
@@ -22,9 +22,11 @@ page_css: landing.css
 
       <a href="https://deno.land/x/lume"><img src="https://shield.deno.dev/x/lume" alt="deno.land/x/lume" width="144" height="20"></a>
     </div>
+    {% endif %}
   </header>
 
 
+  {% if usage %}
   <section class="landing-usage">
   {% for block in usage %}
     <div class="landing-usage-text">
@@ -36,7 +38,9 @@ page_css: landing.css
     </div>
   {% endfor %}
   </section>
+  {% endif %}
 
+  {% if features %}
   <ul class="landing-features">
     {% for feature in features %}
     <li>
@@ -46,7 +50,10 @@ page_css: landing.css
     </li>
     {% endfor %}
   </ul>
+  {% endif %}
 
+
+  {% if examples %}
   <section class="landing-examples">
     <header class="landing-examples-header">
       <h2>{{ examples.title }}</h2>
@@ -71,7 +78,9 @@ page_css: landing.css
       <a href="{{ examples.more.href }}" class="landing-examples-cta">{{ examples.more.text }}</a>
     </lume-carousel>
   </section>
+  {% endif %}
 
+  {% if testimonials %}
   <section class="landing-testimonials">
     <h2>{{ testimonials.title }}</h2>
 
@@ -114,7 +123,9 @@ page_css: landing.css
     {% endfor %}
     </ul>
   </section>
+  {% endif %}
 
+  {% if support %}
   <section class="landing-suppport">
     <h2>{{ support.title }}</h2>
 
@@ -134,4 +145,5 @@ page_css: landing.css
       {{ support.contribute.description | md | safe }}
     </div>
   </section>
+  {% endif %}
 </div>
