@@ -1,0 +1,65 @@
+---
+layout: ./base.njk
+page_css: contact.css
+---
+
+<main class="contact-us">
+  <header class="contact-us-header">
+    <h1>{{ title }}</h1>
+    <p><a href="mailto:{{ email | safe }}">{{ email | safe }}</a></p>
+    <p><a href="tel:{{ phone | safe }}">{{ phone | safe }}</a></p>
+    {% for office in offices %}
+    <p><strong>{{ office.name | safe }}</strong>: {{ office.address | safe }}</p>
+    {% endfor %}
+  </header>
+
+  <ul class="showcase-sites">
+    {% for site in sites %}
+    {% if site.img %}
+    <li>
+      <figure class="site">
+        <a href="{{ site.url }}" class="site-image">
+          <img src="{{ site.img }}" alt="Screenshot of the site" width="300" height="200">
+        </a>
+        <figcaption class="site-description">
+          <p>
+            {% if site.code %}
+              <a class="button is-secondary is-small" href="{{ site.code }}">View code</a>
+            {% endif %}
+
+            <a href="{{ site.url }}" class="site-name">
+              {{ site.title }}
+            </a>
+          </p>
+
+          {{ site.description | md | safe }}
+        </figcaption>
+      </figure>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  {# <section class="showcase-more">
+    <h2>More examples</h2>
+
+    <ul>
+      {% for site in sites %}
+      {% if not site.img %}
+      <li class="site-description">
+        <p>
+          <a href="{{ site.url }}" class="site-name">
+            {{ site.title }}
+          </a>
+          {% if site.code %}
+            <a class="button is-secondary is-small" href="{{ site.code }}">View code</a>
+          {% endif %}
+        </p>
+
+        {{ site.description | md | safe }}
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section> #}
+</main>

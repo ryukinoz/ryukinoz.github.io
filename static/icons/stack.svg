@@ -1,9 +1,6 @@
-<svg width="97" height="97" viewBox="0 0 97 97" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" fill-rule="evenodd">
-    <path d="M.5.5h96v96H.5z"/>
-    <path fill="#BF4040" fill-rule="nonzero" d="m12.5 30.5 36 21 36-21-36-21z"/>
-    <path class="ico-stroke" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m12.5 66.5 36 21 36-21"/>
-    <path class="ico-stroke" stroke="#FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m12.5 48.5 36 21 36-21"/>
-    <path stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m12.5 30.5 36 21 36-21-36-21z"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg fill="#119134" width="97px" height="97px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>stack2</title>
+<path d="M28.608 11.246l-12.608-8.632-12.608 8.632 12.608 8.631 12.608-8.631zM16 21.803l-11.129-7.338-1.479 1.535 12.608 8.631 12.608-8.631-1.499-1.568-11.109 7.371zM16 26.559l-11.129-7.338-1.479 1.535 12.608 8.631 12.608-8.631-1.499-1.568-11.109 7.371z"></path>
 </svg>
