@@ -3,13 +3,22 @@ title: Contact Us
 main_menu: contact
 email: info@ryukit.com
 phone: '+61432919418'
-office: | 
-  Unit 37
-  414-418 Pitt Street
-  Haymarket
-  NSW
-  2000
-  Australia
+offices:
+  - name: NSW
+    address: | 
+      Unit 37
+      414-418 Pitt Street
+      Haymarket
+      NSW
+      2000
+      Australia
+  - name: VIC
+    address: | 
+      5 Baxter Street
+      Eltham
+      VIC
+      3095
+      Australia
 
 # sites:
 #   - title: Lume

@@ -6,9 +6,11 @@ page_css: contact.css
 <main class="contact-us">
   <header class="contact-us-header">
     <h1>{{ title }}</h1>
-    <a href="mailto:{{ email | safe }}">{{ email | md | safe }}</a>
-    <a href="tel:{{ phone | safe }}">{{ phone | md | safe }}</a>
-    {{ office | md | safe }}
+    <p><a href="mailto:{{ email | safe }}">{{ email | safe }}</a></p>
+    <p><a href="tel:{{ phone | safe }}">{{ phone | safe }}</a></p>
+    {% for office in offices %}
+    <p><strong>{{ office.name | safe }}</strong>: {{ office.address | safe }}</p>
+    {% endfor %}
   </header>
 
   <ul class="showcase-sites">
