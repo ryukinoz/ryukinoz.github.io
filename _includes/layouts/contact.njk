@@ -6,8 +6,8 @@ page_css: contact.css
 <main class="contact-us">
   <header class="contact-us-header">
     <h1>{{ title }}</h1>
-    {{ email | md | safe }}
-    {{ phone | md | safe }}
+    <a href="mailto:{{ email | safe }}">{{ email | md | safe }}</a>
+    <a href="tel:{{ phone | safe }}">{{ phone | md | safe }}</a>
     {{ office | md | safe }}
   </header>
 

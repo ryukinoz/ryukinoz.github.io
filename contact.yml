@@ -2,7 +2,7 @@ layout: layouts/contact.njk
 title: Contact Us
 main_menu: contact
 email: admin@ryukit.com
-phone: +61 432 919 418
+phone: '+61432919418'
 office: | 
   Unit 37
   414-418 Pitt Street
