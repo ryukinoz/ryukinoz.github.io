@@ -1,7 +1,7 @@
 layout: layouts/contact.njk
 title: Contact Us
 main_menu: contact
-email: admin@ryukit.com
+email: info@ryukit.com
 phone: '+61432919418'
 office: | 
   Unit 37
