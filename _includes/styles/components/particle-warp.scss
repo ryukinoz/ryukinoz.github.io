@@ -1,0 +1,48 @@
+
+$scale: 20;
+$d: $scale / 100 *  2vmax;
+.star-warp {
+	overflow: hidden;
+	background: #222;
+	width:  1vw * $scale;
+	height: 1vh * $scale;
+}
+
+
+ .particle {
+	position: absolute;
+	width: $d;
+	height: $d;
+	border-radius: 50%;
+	animation: shoot 3s ease-out infinite;
+	animation-name: shoot, fade;
+	@for $i from 0 to 400 {
+		$t: (1 + .01*random(100))*1s;
+		&:nth-child(#{$i + 1}) {
+			transform: translate(random($scale)*1vw, random($scale)*1vh);
+			background: hsl(0, 0, 95%);
+			animation-duration: $t;
+			animation-delay: -.01*random(100)*$t;
+		}
+	}
+}
+
+@keyframes shoot {
+	0% {
+		transform: translate($scale /2 * 1vw,$scale /2 * 1vh) scale(0.1);
+		// scale for 3D-ness
+	}
+}
+
+@keyframes fade {
+	from { // so they come from the distance instead of a point
+		opacity: 0
+	}
+	10% {
+		opacity: 1;
+	}
+	95%, to { // so they're still moving when they fade
+		opacity: 0
+	}
+}
+
