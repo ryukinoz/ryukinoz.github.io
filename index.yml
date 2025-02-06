@@ -1,5 +1,5 @@
 layout: layouts/landing.njk
-title: Ryuk IT
+title: Ryuk
 description: Full Stack and Cloud Native
 header:
   title: Delivery as a <span>Professional</span> Service 
